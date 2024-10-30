@@ -1,0 +1,157 @@
+.infinite-list {
+  height: 72vh;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.infinite-list {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+
+
+  .barlist {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+
+    .item-img {
+      margin-right: 10px;
+
+      img {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+      }
+    }
+
+    .item-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-size: 16px;
+      }
+
+      .subname {
+        font-size: 14px;
+        color: rgba(83, 88, 117, 1);
+      }
+    }
+
+    .item-state {
+      margin-left: 20px;
+
+      span {
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        // background-color: #1250FC;
+      }
+    }
+
+  }
+
+}
+
+.card-lists {
+  margin: 10px;
+  position: relative;
+
+  .item-state-pos {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    // background-color: #1250FC;
+    color: #6C88D5;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 0 0 0 20px;
+  }
+
+  .item-title {
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: text-top;
+    }
+
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(15, 18, 34, 1);
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 15px;
+  }
+
+  .item-content {
+    margin-bottom: 5px;
+
+    .cot {
+      flex: 1;
+
+      .cot-tit {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(83, 88, 117, 1);
+        padding-bottom: 5px;
+
+        span {
+          font-size: 14px;
+          color: rgba(15, 18, 34, 1);
+
+          &.type {
+            font-size: 10px;
+            padding: 5px 10px;
+            font-weight: 500;
+            line-height: 0px;
+            color: #fa4a1e;
+            text-align: left;
+            border-radius: 6px;
+            background: #fa4a1e14;
+
+            &.error-type {
+              color: #4060c7;
+              background: #e8f3ff;
+            }
+
+            &.suc-type {
+              color: #48ac4c;
+              background: #e2ffef;
+            }
+          }
+        }
+
+      }
+
+      .cot-txt {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(15, 18, 34, 1);
+      }
+    }
+  }
+
+  .item-bottom {
+    flex-flow: row-reverse;
+  }
+}
+
+.infinite-list .infinite-list-item+.list-item {
+  margin-top: 10px;
+}
+
+.mt-4 {
+  float: right;
+  text-align: right;
+}

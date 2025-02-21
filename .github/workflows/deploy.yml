@@ -10,19 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    # 检出代码仓库
+    - name: Checkout repository
+      uses: actions/checkout@v2
     
+    # 设置Node.js环境
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '14'
     
+    # 安装项目依赖
     - name: Install dependencies
       run: npm install
       
+    # 构建VuePress站点
     - name: Build VuePress site
       run: npm run docs:deploy
     
+    # 部署到GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:

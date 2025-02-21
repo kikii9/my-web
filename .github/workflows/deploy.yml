@@ -26,7 +26,7 @@ jobs:
       
     # 构建VuePress站点
     - name: Build VuePress site
-      run: npm run docs:deploy
+      run: npm run docs:build
     
     # 部署到GitHub Pages
     - name: Deploy to GitHub Pages
